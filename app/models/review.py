@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.db.base import Base
 
-# Review Model
+# Review Model (Defines columns for tables)
 class Review(Base):
     __tablename__ = "reviews"
     id = Column(Integer, primary_key=True, index=False)
