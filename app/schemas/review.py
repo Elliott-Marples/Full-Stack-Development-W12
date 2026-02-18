@@ -8,7 +8,7 @@ class ReviewCreate(BaseModel):
     rating: int
     comment: Optional[str] = None
 
-class User(ReviewCreate):
+class Review(ReviewCreate):
     id: int
     user_id: int
     class Config():
