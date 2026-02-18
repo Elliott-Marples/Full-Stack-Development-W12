@@ -2,8 +2,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 
-# Database URL
-SQLALCHEMY_DATABASE_URL = "mysql+mysqlclient://root:SEPS@127.0.0.1:3306/bookstore"
+# Database URL ("mysqldb" is the dialect for mysqlclient)
+SQLALCHEMY_DATABASE_URL = "mysql+mysqldb://root:SEPS@127.0.0.1:3306/bookstore"
 
 # Engine
 engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)

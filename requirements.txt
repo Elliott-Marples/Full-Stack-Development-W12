@@ -5,3 +5,6 @@ mysqlclient
 passlib[bcrypt]
 python-jose[cryptography]
 python-multipart
+
+# using bcrypt 5.0.0 or later with passlib results in errors
+bcrypt<5
